@@ -12,7 +12,7 @@ hbs.registerPartials(__dirname + '/views/partials');
 app.use(express.static('public'));
 
 
-app.get('/', (req,res) => {
+app.get('/home', (req,res) => {
     res.render('home', {
         nombre: ' Medardo Diaz ',
         titulo: ' Curso de Node '
